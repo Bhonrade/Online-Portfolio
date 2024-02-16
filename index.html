@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Portfolio</title>
+  <style>
+    body {
+      background-color: lightblue;
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      margin: 0; 
+      padding: 0; 
+    }
+
+    .f1{
+      font-size: 24px;
+      padding: 10px;
+    }
+
+    .navbar {
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: dodgerblue;
+      top: 0; 
+      z-index: 1000; 
+    }
+
+    .link a {
+      color: #fff;
+      opacity: 0.5;
+      padding: 20px; 
+      line-height: 80px;
+      transition: opacity 1s; 
+      font-size: 20px;
+    }
+
+    .link a:hover,
+    .link.active a {
+      opacity: 1; 
+    }
+
+    .link-group {
+      list-style: none;
+      display: flex;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 120px; 
+      position: relative; 
+    }
+
+    .section-container {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content-container {
+      background-color: rgba(94, 232, 250, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .live-btn {
+      background-color: green;
+    }
+
+    .source-btn,
+    .resume-btn {
+      background-color: dodgerblue;
+    }
+
+    .resume-btn {
+      margin-left: 10px;
+    }
+
+    .project {
+      margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 20px; 
+      border-radius: 10px; 
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .project_title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .contact_content {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .contact_content form {
+      margin-top: 20px;
+    }
+
+    .contact_content input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact_content input[type="submit"] {
+      background-color: dodgerblue;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="link-group">
+      <li class="link active"><a href="#">Home</a></li>
+      <li class="link"><a href="#">Projects</a></li>
+      <li class="link"><a href="#">About</a></li>
+      <li class="link"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="Home" class="section-container">
+    <div class="container">
+      <div class="center">
+        <img src="mybg.jpg" alt="pogi" width="800px">
+        <div class="content-container">
+          <p class="section-title">Welcome to My Portfolio</p>
+          <p class="f1">Hello everyone!! As an aspiring IT student, I am passionate about exploring the dynamic world of technology. With a keen interest in problem-solving and innovation, I am eager to embark on a journey of continuous learning and growth. My goal is to acquire a comprehensive understanding of various IT concepts, ranging from programming languages and software development to network administration and cybersecurity. Through hands-on experience and dedication to mastering new skills, I aim to contribute to the ever-evolving landscape of information technology and make a positive impact in the digital age.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-container">
+    <div class="container">
+      <div class="section-title">My Projects</div>
+      <div class="projects">
+        <div class="project">
+          <img src="image/bucket list.jpg" alt="Bucket List">
+          <div class="project_title">Bunrade Shop</div>
+          <div class="buttons">
+            <a href="https://bhonrade.github.io/HandsOn3/" class="btn live-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/Bhonrade/HandsOn3" class="btn source-btn" target="_blank">Source Code</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="image/anime.jpg" alt="Todo-List App">
+          <div class="project_title">Todo-List-App</div>
+          <div class="buttons">
+            <a href="https://bhonrade.github.io/Todo-List-App/" class="btn live-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/Bhonrade/Todo-List-App" class="btn source-btn" target="_blank">Source Code</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="image/calculator.jpg" alt="Simple Calculator">
+          <div class="project_title">AddEventListener</div>
+          <div class="buttons"> 
+            <a href="https://bhonrade.github.io/HandsOn1-addEventListener-WS101/" class="btn live-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/Bhonrade/HandsOn1-addEventListener-WS101" class="btn source-btn" target="_blank">Source Code</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="image/fries.jpg" alt="Food-Landing-Page">
+          <div class="project_title">Simple Calculator</div>
+          <div class="buttons">
+            <a href="https://bhonrade.github.io/SimpleCalc/" class="btn live-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/Bhonrade/SimpleCalc" class="btn source-btn" target="_blank">Source Code</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="image/changecolor.jpg" alt="changecolor">
+          <div class="project_title">Calculator with Function</div>
+          <div class="buttons">
+            <a href="https://bhonrade.github.io/CalcWithFunction/" class="btn live-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/Bhonrade/CalcWithFunction" class="btn source-btn" target="_blank">Source Code</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="image/button.jpg" alt="addEventListener">
+          <div class="project_title">Color Change</div>
+          <div class="buttons">
+            <a href="https://bhonrade.github.io/HandsOn2-colorChanger-WS101/" class="btn live-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/Bhonrade/HandsOn2-colorChanger-WS101" class="btn source-btn" target="_blank">Source Code</a>
+          </div>
+    </div>
+  </section>
+
+  <section id="About" class="section-container">
+    <div class="container">
+      <div class="center">
+        <div class="content-container">
+          <p class="section-title">About Me</p>
+          <p class="f1">Here is my Resume</p>
+          <img src="Picko.jpg" alt="Pogi" width="200px">
+          <div class="button-container">
+            <a href="https://bhonrade.github.io/Online_Resume/" class="btn resume-btn" target="_blank">View Online Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Contact" class="section-container">
+    <div class="container">
+      <div class="center">
+        <div id="contact" class="content-container">
+          <p class="section-title">Contact Me</p>
+          <div class="contact_content">
+            <p class="f1">Fill out the form below and I'll get back to you as soon as possible.</p>
+            <form action="#">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name"><br>
+              <label for="number">Number:</label><br>
+              <input type="text" id="number" name="number"><br>
+              <label for="address">Address:</label><br>
+              <input type="text" id="address" name="address"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
